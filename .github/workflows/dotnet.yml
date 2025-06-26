@@ -33,7 +33,7 @@ jobs:
     - name: Publish application
       run: dotnet publish src/CybersecurityChatbot -c Release -o ./publish
       
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4.3.0
       with:
         name: chatbot-release
         path: ./publish
