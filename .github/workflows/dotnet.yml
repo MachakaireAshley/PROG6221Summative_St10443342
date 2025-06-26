@@ -21,14 +21,32 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
+    - name: Find project file
+      id: find_project
+      run: |
+        # Find either .sln or .csproj file
+        $projectFile = Get-ChildItem -Recurse -Filter *.csproj | Select-Object -First 1
+        if (!$projectFile) {
+          $projectFile = Get-ChildItem -Recurse -Filter *.sln | Select-Object -First 1
+        }
+        if (!$projectFile) {
+          echo "::error::No .sln or .csproj file found!"
+          exit 1
+        }
+        echo "PROJECT_FILE=$($projectFile.FullName)" >> $env:GITHUB_ENV
+        echo "PROJECT_DIR=$(Split-Path -Path $projectFile.FullName -Parent)" >> $env:GITHUB_ENV
+
+    - name: Restore dependencies
+      run: dotnet restore $env:PROJECT_FILE
+
     - name: Build
-      run: CybersecurityChatbot
+      run: dotnet build $env:PROJECT_FILE --configuration Release --no-restore
 
     - name: Run tests
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test $env:PROJECT_FILE --configuration Release --no-build
 
     - name: Publish application
-      run: dotnet publish src/CybersecurityChatbot -c Release -o ./publish
+      run: dotnet publish $env:PROJECT_FILE -c Release -o ./publish
 
     - uses: actions/upload-artifact@v4
       with:
