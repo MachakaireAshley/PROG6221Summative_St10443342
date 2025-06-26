@@ -1,0 +1,14 @@
+﻿<Window x:Class="CybersecurityChatbot.NameInputDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Enter Your Name" Height="200" Width="400"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <StackPanel>
+            <TextBlock Text="Welcome to Ashley's Cybersecurity ChatBot" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="Please enter your name:" Margin="0,0,0,5"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10"/>
+            <Button Content="OK" Click="OkButton_Click" HorizontalAlignment="Right" Width="80"/>
+        </StackPanel>
+    </Grid>
+</Window>
