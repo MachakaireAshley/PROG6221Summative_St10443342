@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\",
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\nameinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:nameinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\nameinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:nameinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221summative_st10443342\\cybersecuritychatbot\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\source\\repos\\cybersecuritychatbot\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221summative_st10443342\\cybersecuritychatbot\\nameinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:nameinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221summative_st10443342\\cybersecuritychatbot\\nameinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:nameinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|c:\\users\\lab_services_student\\documents\\github\\prog6221summative_st10443342\\cybersecuritychatbot\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8C0F70FE-F664-40FD-97D0-6FBCB88D9532}|CybersecurityChatbot.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,48 +36,48 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NameInputDialog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\NameInputDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\NameInputDialog.xaml.cs",
               "RelativeDocumentMoniker": "NameInputDialog.xaml.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\NameInputDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\NameInputDialog.xaml.cs",
               "RelativeToolTip": "NameInputDialog.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAgAAAAAIwBMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAABgzczMzEwnwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T14:41:42.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "NameInputDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\NameInputDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\NameInputDialog.xaml",
               "RelativeDocumentMoniker": "NameInputDialog.xaml",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\NameInputDialog.xaml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\NameInputDialog.xaml",
               "RelativeToolTip": "NameInputDialog.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-26T14:40:11.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T14:40:11.754Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-12T19:49:57.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\CybersecurityChatbot\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAKwEAAAAamZmZmYUwHYFAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\PROG6221Summative_St10443342\\CybersecurityChatbot\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "MainWindow.xaml.cs*",
+              "ViewState": "AgIAADEFAAAAAAAAAAAewEkFAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T19:49:44.916Z"
+              "WhenOpened": "2025-06-12T19:49:44.916Z",
+              "EditorCaption": ""
             }
           ]
         }

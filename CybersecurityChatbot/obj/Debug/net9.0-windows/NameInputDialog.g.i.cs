@@ -60,7 +60,7 @@ namespace CybersecurityChatbot {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CybersecurityChatbot;V1.0.0.0;component/nameinputdialog.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CybersecurityChatbot;component/nameinputdialog.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\NameInputDialog.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

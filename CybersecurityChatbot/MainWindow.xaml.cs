@@ -156,6 +156,7 @@ namespace CybersecurityChatbot
                 new BrowsingHandler(),
                 new SocialEngineeringHandler(),
                 new TwoFactorAuthHandler(),
+                new GoodbyeHandler(this),
                 new DefaultHandler()
             };
 
@@ -657,7 +658,7 @@ namespace CybersecurityChatbot
             AddChatMessage(userName, input, Colors.MidnightBlue);
             AddToActivityLog($"User input: {input}");
 
-
+            // Check for special commands
             if (input.Equals("what have you done for me?", StringComparison.OrdinalIgnoreCase) ||
                 input.Equals("show activity log", StringComparison.OrdinalIgnoreCase))
             {
@@ -666,7 +667,16 @@ namespace CybersecurityChatbot
                 return;
             }
 
+            // Handle exit commands immediately
+            var exitCommands = new[] { "exit", "quit", "close" };
+            if (exitCommands.Any(cmd => input.Equals(cmd, StringComparison.OrdinalIgnoreCase)))
+            {
+                AddChatMessage("Cybersecurity Bot", "Closing the application. Goodbye!", Colors.Purple);
+                Task.Delay(1000).ContinueWith(t => Dispatcher.Invoke(Close));
+                return;
+            }
 
+            // Handle the input with the chatbot
             var handler = responseHandlers.FirstOrDefault(h => h.CanHandle(input)) ?? responseHandlers.Last();
             handler.Handle(input, userName);
 
@@ -1314,6 +1324,41 @@ namespace CybersecurityChatbot
                             "Positive Attitude", MessageBoxButton.OK, MessageBoxImage.Information);
                     });
                 }
+            }
+        }
+
+        public class GoodbyeHandler : ResponseHandlerBase
+        {
+            private MainWindow _mainWindow;
+
+            public GoodbyeHandler(MainWindow mainWindow)
+            {
+                _mainWindow = mainWindow;
+                Keywords = new List<string> { "goodbye", "bye", "exit", "quit", "see you", "close" };
+                ResponseColor = Colors.Purple;
+                ResponseVariations.Add("goodbye", new List<string> {
+            "Goodbye {0}! Stay safe online!",
+            "See you later {0}! Remember to practice good cybersecurity habits!",
+            "Farewell {0}! Your digital safety is important - come back if you have more questions!",
+            "Until next time {0}! Don't forget to keep your software updated!",
+            "Bye {0}! Remember: strong passwords + 2FA = better security!"
+        });
+            }
+
+            public override void Handle(string input, string userName)
+            {
+                string response = string.Format(GetRandomResponse("goodbye"), userName);
+                AddMessage(response, ResponseColor);
+
+                // Add delay before closing to let user see the message
+                Task.Delay(2000).ContinueWith(t =>
+                {
+                    _mainWindow.Dispatcher.Invoke(() =>
+                    {
+                        _mainWindow.AddToActivityLog($"User ended session: {userName}");
+                        _mainWindow.Close();
+                    });
+                });
             }
         }
         public class TaskHandler : ResponseHandlerBase
