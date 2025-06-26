@@ -20,9 +20,20 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore
+      
+    - name: Restore NuGet packages
+      run: dotnet restore CybersecurityChatbot.sln
+      
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build CybersecurityChatbot.sln --configuration Release --no-restore
+      
+    - name: Run tests
+      run: dotnet test CybersecurityChatbot.sln --configuration Release --no-build
+          
+    - name: Publish application
+      run: dotnet publish src/CybersecurityChatbot -c Release -o ./publish
+      
+    - uses: actions/upload-artifact@v3
+      with:
+        name: chatbot-release
+        path: ./publish
